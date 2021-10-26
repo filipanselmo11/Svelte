@@ -1,36 +1,37 @@
 <script lang="ts">
 </script>
 
-
 <form>
     <div class="form-row">
         <div class="form-group col-md-4">
             <label for="inputNome">Nome</label>
-            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+            <input
+                type="text"
+                class="form-control"
+                id="inputNome"
+                placeholder="Nome"
+            />
         </div>
         <div class="form-group col-md-4">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Email"
+            />
         </div>
         <div class="form-group col-md-4">
             <label for="inputSenha">Senha</label>
-            <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
+            <input
+                type="password"
+                class="form-control"
+                id="inputSenha"
+                placeholder="Senha"
+            />
         </div>
-    </div>
-    <div class="form-group">
-        <label for="inputTec1">Tecnologia 1</label>
-        <input type="text" class="form-control" id="inputTec1" placeholder="Tecnologia 1">
-    </div>
-    <div class="form-group">
-        <label for="inputTec2">Tecnologia 2</label>
-        <input type="text" class="form-control" id="inputTec2" placeholder="Tecnologia 2">
-    </div>
-    <div class="form-group">
-        <label for="inputEndGit">Github</label>
-        <input type="text" class="form-control" id="inputEndGit" placeholder="Link do Github">
     </div>
 </form>
 
 <style>
-
 </style>

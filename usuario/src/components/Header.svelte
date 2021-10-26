@@ -1,26 +1,36 @@
 <script>
+    import { Router, Link, Route } from "svelte-routing";
+    import Home from "../views/Home.svelte";
+    import Cadastro from "./Cadastro.svelte";
+    import Login from "./Login.svelte";
 
+    export let url = "";
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #808080;">
-   <a class="navbar-brand" href="/">App do Usuário</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collpase" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home<span class="sr-only">(Página Atual)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Login</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Cadastro</a>
-            </li>
-        </ul>
+<Router {url}>
+    <nav class="navbar navbar-dark" style="background-color: #808080;">
+        <a class="navbar-brand" href="/">App do Usuário</a>
+        <div class="link">
+            <a class="navbar-brand" style="color: #ffffff;" href="/"
+                ><Link to="/">Home</Link></a
+            >
+            <a class="navbar-brand" style="color: #ffffff;" href="cadastro"
+                ><Link to="cadastro">Cadastro</Link></a
+            >
+            <a class="navbar-brand" style="color: #ffffff;" href="login"
+                ><Link to="login">Login</Link></a
+            >
+        </div>
+    </nav>
+    <div>
+        <Route path="/"><Home /></Route>
+        <Route path="cadastro" component={Cadastro} />
+        <Route path="login" component={Login} />
     </div>
-</nav>
+</Router>
 
-<style></style>
+<style>
+    .link {
+        color: #ffffff important;
+    }
+</style>

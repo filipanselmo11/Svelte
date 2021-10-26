@@ -1,5 +1,5 @@
 <script lang="ts">
-import Cadastro from "./components/Cadastro.svelte";
+//import Cadastro from "./components/Cadastro.svelte";
 import Footer from "./components/Footer.svelte";
 import Header from "./components/Header.svelte";
 
@@ -9,8 +9,6 @@ import Header from "./components/Header.svelte";
 
 <main>
 	<Header/>
-	<br/>
-	<Cadastro/>
 	<br/>
 	<Footer/>	
 </main>
