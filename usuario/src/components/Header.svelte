@@ -4,10 +4,9 @@
     import Cadastro from "./Cadastro.svelte";
     import Login from "./Login.svelte";
 
-    export let url = "";
 </script>
 
-<Router {url}>
+<Router>
     <nav class="navbar navbar-dark" style="background-color: #808080;">
         <a class="navbar-brand" href="/">App do Usuário</a>
         <div class="link">
